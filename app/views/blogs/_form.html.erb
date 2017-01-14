@@ -1,12 +1,9 @@
 <%= form_for(@blog, url: choose_new_or_edit) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      # バリテーションのエラーの件数を表示
       <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
       
       <ul>
-        # @blog.errorsは@blogをバリテーションした際のエラー情報
-        # full_messagesは複数のエラーメッセージを表す
         <% @blog.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
