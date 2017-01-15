@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'blogs' => 'blogs#index'
   get 'contacts' => 'contacts#new'
   
-  resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
+  resource :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
     collection do
       post :confirm
     end
