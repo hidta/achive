@@ -9,7 +9,11 @@
 
 <body>
   <section class="main-header">
-    <p class="flash"><%= notice %><%= alert %></p>
+    <% if flash[:notice] %>
+      <div class="alert alert-success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <img src="<%= asset_path "achieve.png" %>">
   </section>
     
