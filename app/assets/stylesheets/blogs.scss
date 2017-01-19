@@ -7,6 +7,12 @@
     padding: 20px;
     text-align: left;
     word-wrap: break-word;
+    .user-name {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 5px, 10px;
+      padding: 5px;
+    }
   }
 }
 input[type="submit"].btn-block{
