@@ -53,5 +53,6 @@ gem 'devise'
 
 gem 'faker'
 
-gem 'letter_opener_web'
-
+group :development do
+  gem 'letter_opener_web'
+end
