@@ -55,4 +55,8 @@ gem 'faker'
 
 group :development do
   gem 'letter_opener_web'
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 8853af65557dc717cbbaece19bdb6142d7860673
