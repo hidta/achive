@@ -52,3 +52,6 @@ gem 'jquery-turbolinks'
 gem 'devise'
 
 gem 'faker'
+
+gem 'letter_opener_web'
+
