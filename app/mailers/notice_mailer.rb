@@ -9,10 +9,6 @@ class NoticeMailer < ApplicationMailer
     @blog = blog
 
     mail to: "tahkyu3@outlook.jp",
-<<<<<<< HEAD
-         subject: '【achive】ブログが投稿されました'
-  end
-=======
          subject: '【Achive】ブログが投稿されました！'
   end
 
@@ -23,5 +19,5 @@ class NoticeMailer < ApplicationMailer
          subject: 'お問い合わせありがとうございました'
   end
   
->>>>>>> 8853af65557dc717cbbaece19bdb6142d7860673
+
 end

@@ -53,10 +53,21 @@ gem 'devise'
 
 gem 'faker'
 
+gem 'rails_admin'
+
+gem 'cancan'
+
 group :development do
   gem 'letter_opener_web'
-<<<<<<< HEAD
 end
-=======
+
+group :development, :test do
+  gem 'hirb'         # モデルの出力結果を表形式で表示するGem
+  gem 'hirb-unicode' # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
+
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug' # デバッグを実施', :require => "flog"
 end
->>>>>>> 8853af65557dc717cbbaece19bdb6142d7860673
+
+

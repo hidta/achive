@@ -8,7 +8,7 @@ class AddConfirmableToDevise < ActiveRecord::Migration
     add_index :users, :confirmation_token, unique: true
 
     execute("UPDATE users SET confirmed_at = NOW()")
-    end
+  end
 
     def down
       remove_columns :users, :confirmation_token, :confirmed_at, :confirmation_sent_at

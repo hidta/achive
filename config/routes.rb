@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
 
   get 'blogs' => 'blogs#index'
   get 'contacts' => 'contacts#new'
 
-  resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
+  resources :blogs, only: [:new, :create, :edit, :update, :destroy] do
     collection do
       post :confirm
     end
@@ -19,15 +20,10 @@ Rails.application.routes.draw do
   end
 
   root 'top#index'
-<<<<<<< HEAD
+
   
   if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
-=======
-
-  if Rails.env.development?
-    mount LetterOpenerWeb::Engine, at:"/letter_opener"
->>>>>>> 8853af65557dc717cbbaece19bdb6142d7860673
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
