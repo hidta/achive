@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+    <% if flash[:notice] %>
+      <div class="alert alert-success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <h1>ポエム</h1>
+    <div class="row">
+      <h4><strong><%= @poem.title %></strong></h4>
+      <p><%= @poem.content %></p>
+      <div class="user-name btn">
+        <%= @poem.auther %>
+      </div>
+      <%= link_to "一覧", poems_path, class: 'btn btn-default btn-sm btn-success' %>
+    </div>
+  </div>
+</div>

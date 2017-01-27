@@ -1,3 +1,4 @@
 class Poem < ActiveResource::Base
-  self.site = "https://limitless-earth-67109.herokuapp.com"
+  self.site = "https://thawing-tor-53666.herokuapp.com/"
+  
 end
