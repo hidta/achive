@@ -1,4 +1,4 @@
-class Poem < ActiveResource::Base
-  self.site = "https://thawing-tor-53666.herokuapp.com/"
+class Poem
+  include Her::Model
   
 end
