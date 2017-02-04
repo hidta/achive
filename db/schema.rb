@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20170130081607) do
     t.boolean  "admin",                  default: false
     t.string   "uid",                    default: "",    null: false
     t.string   "provider",               default: "",    null: false
+    t.string   "image_url"
     t.string   "avatar"
   end
 
