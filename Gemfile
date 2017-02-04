@@ -61,8 +61,17 @@ gem 'activeresource'
 
 gem 'her'
 
+gem 'omniauth'
+
+gem 'omniauth-twitter'
+
+gem 'carrierwave'
+
+gem 'rmagick'
+
 group :development do
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end
 
 group :development, :test do
