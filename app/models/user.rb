@@ -7,7 +7,9 @@ class User < ActiveRecord::Base
          
   mount_uploader :avatar, AvatarUploader
 
-  has_many :blogs
+  has_many :blogs, dependent: :destroy
+  
+  has_many :comments, dependent: :destroy
   
   def self.find_for_twitter_oauth(auth, sign_in_and_resource = nil)
     user = User.find_by(provider: auth.provider, uid: auth.uid)
