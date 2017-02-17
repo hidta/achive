@@ -18,7 +18,7 @@
         <%= blog.user.name %>
       </div>
       <div class="user-img">
-        <%= profile_img(blog.user, "imag-circle-test") %>
+        <%= profile_img(blog.user) %>
       </div>
       <p><%= blog.content %></p>
       <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-default btn-sm btn-success' %>
