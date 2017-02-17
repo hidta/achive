@@ -7,7 +7,7 @@ module ApplicationHelper
     else
       img_url = 'no_image.png'
     end
-    image_tag(img_url, alt: user.name, class: "thumbnail center-block")
+    image_tag(img_url, alt: user.name, class: "thumbnail center-block uimg")
   end
   
     
