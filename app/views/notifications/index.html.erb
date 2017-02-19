@@ -5,6 +5,8 @@
     <li>
       <% if notification.read == false %>
         <P>未読</P>
+      <% else %>
+        <p>既読</p>
       <% end %>
       <p>
         <%= notification.comment.user.try(:name) %>さんが
