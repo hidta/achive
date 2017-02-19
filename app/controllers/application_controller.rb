@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
+  before_action :current_notifications, if: :signed_in?
+  
+  def current_notifications
+    @notification_count = Notification.where(user_id: current_user.id).where(read: false).count
+  end
+  
   protect_from_forgery with: :exception
 
   # before_actionで下で定義したメソッドを実行
