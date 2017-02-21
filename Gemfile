@@ -56,22 +56,15 @@ gem 'faker'
 gem 'rails_admin'
 
 gem 'cancan'
-
 gem 'activeresource'
-
 gem 'her'
-
 gem 'omniauth'
-
 gem 'omniauth-twitter'
-
 gem 'omniauth-facebook'
-
 gem 'carrierwave'
-
 gem 'rmagick'
-
 gem 'pusher'
+gem 'fog'
 
 group :development do
   gem 'letter_opener_web'
@@ -87,5 +80,3 @@ group :development, :test do
   gem 'pry-byebug' # デバッグを実施', :require => "flog"
   gem 'better_errors'
 end
-
-
