@@ -65,10 +65,13 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'pusher'
 gem 'fog'
+gem 'dotenv-rails'
+gem 'unicorn'
+
+gem 'therubyracer', platforms: :ruby
 
 group :development do
   gem 'letter_opener_web'
-  gem 'dotenv-rails'
 end
 
 group :development, :test do
@@ -79,4 +82,9 @@ group :development, :test do
   gem 'pry-doc'    # methodを表示
   gem 'pry-byebug' # デバッグを実施', :require => "flog"
   gem 'better_errors'
+  gem 'capistrano', '3.6.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
